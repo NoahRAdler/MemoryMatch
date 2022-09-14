@@ -207,7 +207,7 @@ bool Board::boardWinLose()
 			if (boardGrid[row][col] != "<*>")
 			{
 				checker++;
-				if (checker == 16)
+				if (checker == (ARRAYSIZE * ARRAYSIZE))
 				{
 					return  true;
 				}
