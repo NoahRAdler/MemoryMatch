@@ -15,7 +15,7 @@ using namespace std;
 int main()
 {
 	int coordX;
-	int	coordY;
+	int coordY;
 	string choiceST;
 	
 	Board board1;
