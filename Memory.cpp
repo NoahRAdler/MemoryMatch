@@ -16,6 +16,7 @@ int main()
 {
 	int coordX;
 	int coordY;
+	bool valid = false;
 	string choiceST;
 	
 	Board board1;
@@ -38,10 +39,30 @@ int main()
 	{
 		for (int run1 = 0; run1 < 2; run1++)
 		{
-			cout << "Enter a number pair: " << endl;
-			cin >> coordX >> coordY;
-			cout << endl;
-
+			/*
+			 * Input error check
+			 */
+			valid = false;
+			do
+			{
+				cout << "Enter a number pair: " << flush << endl;
+				cin >> coordX >> coordY;
+				cout << endl;
+				if(cin.good()) 
+				{ 
+					valid = true;
+				}
+				else
+				{
+					cin.clear();
+					cin.ignore(numeric_limits<streamsize>::max(), '\n');
+					cout << "Input error, enter again, ensure to use a number" << endl;
+				}
+			} while (!valid);
+			
+			/*
+			 * board error check
+			 */
 			while (board1.errorCheck(coordX - 1, coordY - 1))
 			{
 				cout << "Enter a number pair: " << endl;
