@@ -16,6 +16,7 @@ int main()
 {
 	int coordX;
 	int coordY;
+	int tries = 15;
 	bool valid = false;
 	string choiceST;
 	
@@ -33,9 +34,9 @@ int main()
 	cout << endl;
   
 	/*
-	 * Player has 15 trys to match 2 numbers 
+	 * Player has 15 tries to match 2 numbers 
 	 */
-	for (int run = 0; run < 15; run++)
+	for (int run = 0; run < tries; run++)
 	{
 		for (int run1 = 0; run1 < 2; run1++)
 		{
@@ -85,7 +86,7 @@ int main()
 		if (board1.boardWinLose())
 		{
 			cout << "Congrats!" << endl;
-			run = 15;
+			run = tries;
 		}
 	}
 	if (!board1.boardWinLose())
