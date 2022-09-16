@@ -22,7 +22,7 @@ int main()
 	
 	Board board1;
 
-	cout << "Randomize board y or n";
+	cout << "Randomize board y or n" << endl;
 	cin >> choiceST;
 	cout << endl;
 	if (choiceST == "y")
