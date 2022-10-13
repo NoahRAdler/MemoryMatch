@@ -10,7 +10,7 @@ For "y or n?" put either y or n to randomize number positions or not. Not random
 
 After the prompt will ask for a number pair, an X then a Y coordinate, which reveals the related position. 
 
-Ensure to input a single number then <enter key> for the X then repeate for the Y coordinate. Y goes top to bottom 1-4, X goes left to right 1-4.
+Ensure to input a single number then *enter key* for the X then repeate for the Y coordinate. Y goes top to bottom 1-4, X goes left to right 1-4.
 
 Two positions can be seen per try, 15 tries are given to match otherwise resulting in a loss. If the two positions are equal numbers, a match is achieved. Match them all to win.
   
